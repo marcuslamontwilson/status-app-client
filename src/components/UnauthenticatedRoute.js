@@ -28,6 +28,6 @@ export default function UnauthenticatedRoute({ component: C, appProps, ...rest }
           : <Redirect
               to={redirect === "" || redirect === null ? "/" : redirect}
             />}
-    />
+    /> 
   );
 }

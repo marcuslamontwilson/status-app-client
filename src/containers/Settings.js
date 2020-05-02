@@ -18,16 +18,18 @@ export default class Settings extends Component {
           <LoaderButton
             block
             bsSize="large"
-            text="Change Email"
-          />
+          >
+            Change Email
+          </LoaderButton>
         </LinkContainer>
         <LinkContainer to="/settings/password">
           <LoaderButton
             block
-            bsSize="large"
-            text="Change Password"
-            
-          />
+            type="submit"
+            bsSize="large"  
+          >
+            Change Password
+          </LoaderButton>
         </LinkContainer>
       </div>
     );

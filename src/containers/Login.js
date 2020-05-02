@@ -13,6 +13,7 @@ export default function Login(props) {
     password: ""
   });
 
+ 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;
   }
@@ -49,9 +50,10 @@ export default function Login(props) {
           <FormControl
             type="password"
             value={fields.password}
-            onChange={handleFieldChange}
+            onChange={handleFieldChange} 
           />
         </FormGroup>
+  
         <Link to="/login/reset">Forgot password?</Link>
         <LoaderButton
           block

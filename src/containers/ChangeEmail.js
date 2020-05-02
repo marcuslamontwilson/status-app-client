@@ -87,7 +87,9 @@ export default class ChangeEmail extends Component {
           loadingText="Updating…"
           disabled={!this.validatEmailForm()}
           isLoading={this.state.isSendingCode}
-        />
+        >
+          Update Email
+        </LoaderButton>
       </form>
     );
   }
@@ -116,7 +118,9 @@ export default class ChangeEmail extends Component {
           loadingText="Confirm…"
           isLoading={this.state.isConfirming}
           disabled={!this.validateConfirmForm()}
-        />
+        >
+        Confirm
+        </LoaderButton>
       </form>
     );
   }

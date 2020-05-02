@@ -61,7 +61,7 @@ function App(props) {
               ) : (
                 <>
                   <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
+                    <NavItem>Sign Up</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/login">
                     <NavItem>Login</NavItem>

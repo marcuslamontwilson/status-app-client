@@ -4,6 +4,8 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import AppliedRoute from "./components/AppliedRoute";
 import Signup from "./containers/Signup";
+import NewReport from "./containers/NewReport";
+import Reports from "./containers/Reports";
 import ChangePassword from "./containers/ChangePassword";
 import ResetPassword from "./containers/ResetPassword";
 import Settings from "./containers/Settings";
@@ -19,14 +21,16 @@ export default function Routes({ appProps }) {
       <AppliedRoute path="/" exact component={Home} appProps={appProps} />
       <UnauthenticatedRoute path="/login" exact component={Login} appProps={appProps} />
       <UnauthenticatedRoute path="/signup" exact component={Signup} appProps={appProps} />
+      <AppliedRoute path="/reports/new" exact component={NewReport} appProps={appProps} />
+      <AppliedRoute path="/reports/:id" exact component={Reports} appProps={appProps} />
       <AuthenticatedRoute path="/settings" exact component={Settings} appProps={appProps} />
-      <AuthenticatedRoute
+      <AppliedRoute
         path="/settings/password"
         exact
         component={ChangePassword}
         appProps={appProps}
       />
-      <AuthenticatedRoute
+      <AppliedRoute
         path="/settings/email"
         exact
         component={ChangeEmail}

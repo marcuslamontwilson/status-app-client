@@ -87,7 +87,9 @@ export default class ChangePassword extends Component {
             loadingText="Changing…"
             disabled={!this.validateForm()}
             isLoading={this.state.isChanging}
-          />
+          >
+            Change Password
+          </LoaderButton>
         </form>
       </div>
     );
