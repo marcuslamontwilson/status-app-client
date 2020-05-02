@@ -6,7 +6,7 @@ const dev =  {
     },
     apiGateway: {
       REGION: "us-east-1",
-      URL: "https://zi36kxisak.execute-api.us-east-1.amazonaws.com/dev"
+      URL: "https://api.sqlegends.com/dev"
     },
     cognito: {
       REGION: "us-east-1",
@@ -24,7 +24,7 @@ const dev =  {
     },
     apiGateway: {
       REGION: "us-east-1",
-      URL: "https://zi36kxisak.execute-api.us-east-1.amazonaws.com/prod"
+      URL: "https://api.sqlegends.com/prod"
     },
     cognito: {
       REGION: "us-east-1",
